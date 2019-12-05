@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="Pawns">
 <meta property="og:description" content="ThinkPhP无法通过Url访问页面&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;环境搭建好之后发现无法通过localhost&#x2F;public&#x2F;index来访问到页面，后来发现因为.htaccess文件的原因，我在开发的时候用的是phpstudy的集成环境，所以要将app目录下的.htaccess文件做修改">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-05T20:52:25.832Z">
+<meta property="og:updated_time" content="2019-12-05T21:11:49.697Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/">
@@ -201,8 +201,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-06 04:52:25" itemprop="dateModified" datetime="2019-12-06T04:52:25+08:00">2019-12-06</time>
+                <time title="修改时间：2019-12-06 05:11:49" itemprop="dateModified" datetime="2019-12-06T05:11:49+08:00">2019-12-06</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHP/" itemprop="url" rel="index">
+                    <span itemprop="name">PHP</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -224,8 +235,6 @@
 <h4 id="分页功能"><a href="#分页功能" class="headerlink" title="分页功能"></a>分页功能</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;在写项目的过程中，我使用了Tp5.1中的paginate方法来实现分页，但是翻页的样式表太丑了不能满足我的项目需要，所以我修改了Think目录下的Bootstrap.php文件，文件里面有注释，打开就可以按照自己的需求来修改函数。paginate可以直接在Db类查询的时候调用paginate方法，也可以改成模型的分页查询</p>
 <hr>
 <h4 id="关联模型"><a href="#关联模型" class="headerlink" title="关联模型"></a>关联模型</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;关联模型一般是用于两个表相互之间有一定关系的，比如学生表和班级表，根据一对一，一对多，多对多的关系，我们可以使用不同的函数来关联模型，我的项目中，我原本使用的是belongTo函数，用法是首先在模型中写入一个函数用来关联模型，然后再控制器中创建模型对象，最后在视图中使用循环标签，{模板变量名.方法.字段名}就可以直接调用数据。后来因为需求变更，我又用了公用的Db类来重写这部分业务，在使用Db类的时候，老是报错，后来发现是没有调用Db类的原因，使用之前要加上use think\Db;</p>
-<hr>
-<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;第一次把php用在项目上面,遇到了很多很多的问题，总结一下：很多报错都是写代码的时候不细心，文档看的不够认真导致的。</p>
 
     </div>
 
@@ -282,7 +291,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ThinkPhP无法通过Url访问页面"><span class="nav-number">1.</span> <span class="nav-text">ThinkPhP无法通过Url访问页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分页功能"><span class="nav-number">2.</span> <span class="nav-text">分页功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联模型"><span class="nav-number">3.</span> <span class="nav-text">关联模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后"><span class="nav-number">4.</span> <span class="nav-text">最后</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ThinkPhP无法通过Url访问页面"><span class="nav-number">1.</span> <span class="nav-text">ThinkPhP无法通过Url访问页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分页功能"><span class="nav-number">2.</span> <span class="nav-text">分页功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联模型"><span class="nav-number">3.</span> <span class="nav-text">关联模型</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -299,6 +308,11 @@
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
