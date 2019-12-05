@@ -47,17 +47,17 @@
   };
 </script>
 
-  <meta name="description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
+  <meta name="description" content="ThinkPhP无法通过Url访问页面&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;环境搭建好之后发现无法通过localhost&#x2F;public&#x2F;index来访问到页面，后来发现因为.htaccess文件的原因，我在开发的时候用的是phpstudy的集成环境，所以要将app目录下的.htaccess文件做修改">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纸上得终觉浅">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85&#x2F;index.html">
+<meta property="og:title" content="ThinkPhp5.1入门和爬坑">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91&#x2F;index.html">
 <meta property="og:site_name" content="Pawns">
-<meta property="og:description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
+<meta property="og:description" content="ThinkPhP无法通过Url访问页面&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;环境搭建好之后发现无法通过localhost&#x2F;public&#x2F;index来访问到页面，后来发现因为.htaccess文件的原因，我在开发的时候用的是phpstudy的集成环境，所以要将app目录下的.htaccess文件做修改">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-01T18:20:57.688Z">
+<meta property="og:updated_time" content="2019-12-05T20:17:32.253Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+<link rel="canonical" href="http://yoursite.com/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>纸上得终觉浅 | Pawns</title>
+  <title>ThinkPhp5.1入门和爬坑 | Pawns</title>
   
 
 
@@ -171,7 +171,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -184,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          纸上得终觉浅
+          ThinkPhp5.1入门和爬坑
         </h1>
 
         <div class="post-meta">
@@ -194,14 +194,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-26 16:24:50" itemprop="dateCreated datePublished" datetime="2019-11-26T16:24:50+08:00">2019-11-26</time>
+              <time title="创建时间：2019-12-01 20:34:30" itemprop="dateCreated datePublished" datetime="2019-12-01T20:34:30+08:00">2019-12-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-02 02:20:57" itemprop="dateModified" datetime="2019-12-02T02:20:57+08:00">2019-12-02</time>
+                <time title="修改时间：2019-12-06 04:17:32" itemprop="dateModified" datetime="2019-12-06T04:17:32+08:00">2019-12-06</time>
               </span>
 
           
@@ -215,13 +215,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="博客的意义"><a href="#博客的意义" class="headerlink" title="博客的意义"></a>博客的意义</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。</p>
+        <h4 id="ThinkPhP无法通过Url访问页面"><a href="#ThinkPhP无法通过Url访问页面" class="headerlink" title="ThinkPhP无法通过Url访问页面"></a>ThinkPhP无法通过Url访问页面</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;环境搭建好之后发现无法通过localhost/public/index来访问到页面，后来发现因为.htaccess文件的原因，我在开发的时候用的是phpstudy的集成环境，所以要将app目录下的.htaccess文件做修改</p>
 <a id="more"></a>
+<IfModule mod_rewrite.c>
+
+
+<p>Options +FollowSymlinks -Multiviews</p>
+<p>RewriteEngine on</p>
+<p>RewriteCond %{REQUEST_FILENAME} !-d</p>
+<p>RewriteCond %{REQUEST_FILENAME} !-f</p>
+<p>RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]</p>
+</IfModule>
+
+
 <hr>
-<h4 id="坚持"><a href="#坚持" class="headerlink" title="坚持"></a>坚持</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;之前也有搭建过一个wordpress的博客，断断续续更了一年，虽然没坚持下去，但是能很明显感觉到自己的水平在提高，写的过程就是一种思考，更重要的是更新博客的也是学习的动力之一。</p>
+<h4 id="分页功能"><a href="#分页功能" class="headerlink" title="分页功能"></a>分页功能</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;在写项目的过程中，我使用了Tp5.1中的paginate方法来实现分页，但是翻页的样式表太丑了不能满足我的项目需要，所以我修改了Think目录下的Bootstrap.php文件，文件里面有注释，打开就可以按照自己的需求来修改函数。paginate可以直接在Db类查询的时候调用paginate方法，也可以改成模型的分页查询</p>
 <hr>
-<h4 id="最近"><a href="#最近" class="headerlink" title="最近"></a>最近</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;前段时间参加了一个CTF比赛，这也可能是我又重新捡起来博客的一个原因之一，我一直对自己蛮有信心，没想到在安全方向输的这么惨。不过没关系，下次会赢回来的。</p>
+<h4 id="关联模型"><a href="#关联模型" class="headerlink" title="关联模型"></a>关联模型</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;关联模型一般是用于两个表相互之间有一定关系的，比如学生表和班级表，根据一对一，一对多，多对多的关系，我们可以使用不同的函数来关联模型，我的项目中，我原本使用的是belongTo函数，用法是首先在模型中写入一个函数用来关联模型，然后再控制器中创建模型对象，最后在视图中使用循环标签，{模板变量名.方法.字段名}就可以直接调用数据。后来因为需求变更，我又用了公用的Db类来重写这部分业务，在使用Db类的时候，老是报错，后来发现是没有调用Db类的原因，使用之前要加上use think\Db;</p>
 <hr>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;第一次把php用在项目上面,遇到了很多很多的问题，总结一下：很多报错都是写代码的时候不细心，文档看的不够认真导致的。</p>
 
     </div>
 
@@ -236,11 +248,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/" rel="next" title="ThinkPhp5.1入门和爬坑">
-      ThinkPhp5.1入门和爬坑 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/" rel="prev" title="纸上得终觉浅">
+      <i class="fa fa-chevron-left"></i> 纸上得终觉浅
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -278,7 +290,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#博客的意义"><span class="nav-number">1.</span> <span class="nav-text">博客的意义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#坚持"><span class="nav-number">2.</span> <span class="nav-text">坚持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最近"><span class="nav-number">3.</span> <span class="nav-text">最近</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ThinkPhP无法通过Url访问页面"><span class="nav-number">1.</span> <span class="nav-text">ThinkPhP无法通过Url访问页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分页功能"><span class="nav-number">2.</span> <span class="nav-text">分页功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联模型"><span class="nav-number">3.</span> <span class="nav-text">关联模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后"><span class="nav-number">4.</span> <span class="nav-text">最后</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
