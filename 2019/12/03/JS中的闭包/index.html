@@ -47,18 +47,18 @@
   };
 </script>
 
-  <meta name="description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
-<meta name="keywords" content="杂谈">
+  <meta name="description" content="在《javascript高级程序设计》中是这样介绍闭包：通过闭包，内部的函数可以在父函数结束后依旧能够引用其外围函数中的变量。理解闭包首先要理解Javascript中一个名词：执行上下文，可以理解为当前代码运行的环境，主要有三个：全局环境，函数环境，eval环境，而Javascript引擎是采用栈的方法来处理它们，栈底是全局上下文，栈顶是当前正在执行的上下文。这里需要记住一个原则:“当函数执行时才">
+<meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纸上得终觉浅">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85&#x2F;index.html">
+<meta property="og:title" content="JS中的闭包">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;03&#x2F;JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85&#x2F;index.html">
 <meta property="og:site_name" content="Pawns">
-<meta property="og:description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
+<meta property="og:description" content="在《javascript高级程序设计》中是这样介绍闭包：通过闭包，内部的函数可以在父函数结束后依旧能够引用其外围函数中的变量。理解闭包首先要理解Javascript中一个名词：执行上下文，可以理解为当前代码运行的环境，主要有三个：全局环境，函数环境，eval环境，而Javascript引擎是采用栈的方法来处理它们，栈底是全局上下文，栈顶是当前正在执行的上下文。这里需要记住一个原则:“当函数执行时才">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-11T14:07:56.806Z">
+<meta property="og:updated_time" content="2019-12-11T14:21:38.849Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+<link rel="canonical" href="http://yoursite.com/2019/12/03/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/">
 
 
 <script id="page-configurations">
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title>纸上得终觉浅 | Pawns</title>
+  <title>JS中的闭包 | Pawns</title>
   
 
 
@@ -182,7 +182,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/03/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -195,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          纸上得终觉浅
+          JS中的闭包
         </h1>
 
         <div class="post-meta">
@@ -205,14 +205,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-26 16:24:50" itemprop="dateCreated datePublished" datetime="2019-11-26T16:24:50+08:00">2019-11-26</time>
+              <time title="创建时间：2019-12-03 18:14:20" itemprop="dateCreated datePublished" datetime="2019-12-03T18:14:20+08:00">2019-12-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-11 22:07:56" itemprop="dateModified" datetime="2019-12-11T22:07:56+08:00">2019-12-11</time>
+                <time title="修改时间：2019-12-11 22:21:38" itemprop="dateModified" datetime="2019-12-11T22:21:38+08:00">2019-12-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,8 +220,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
                   </a>
                 </span>
             </span>
@@ -237,13 +237,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="博客的意义"><a href="#博客的意义" class="headerlink" title="博客的意义"></a>博客的意义</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。</p>
-<a id="more"></a>
-<hr>
-<h4 id="坚持"><a href="#坚持" class="headerlink" title="坚持"></a>坚持</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;之前也有搭建过一个wordpress的博客，断断续续更了一年，虽然没坚持下去，但是能很明显感觉到自己的水平在提高，写的过程就是一种思考，更重要的是更新博客的也是学习的动力之一。</p>
-<hr>
-<h4 id="最近"><a href="#最近" class="headerlink" title="最近"></a>最近</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;前段时间参加了一个CTF比赛，这也可能是我又重新捡起来博客的一个原因之一，我一直对自己蛮有信心，没想到在安全方向输的这么惨。不过没关系，下次会赢回来的。</p>
-<hr>
+        <p>在《javascript高级程序设计》中是这样介绍闭包：通过闭包，内部的函数可以在父函数结束后依旧能够引用其外围函数中的变量。理解闭包首先要理解Javascript中一个名词：执行上下文，可以理解为当前代码运行的环境，主要有三个：<strong>全局环境</strong>，<strong>函数环境</strong>，<strong>eval环境</strong>，而Javascript引擎是采用栈的方法来处理它们，栈底是全局上下文，栈顶是当前正在执行的上下文。这里需要记住一个原则:“<strong>当函数执行时才会创建执行上下文</strong>”</p>
+<p>先看一段代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var show = document.getElementsByClassName(“show”);</span><br><span class="line"></span><br><span class="line">for(var i=0;i&lt;show.length;i++) &#123;</span><br><span class="line">    show[i].onclick = function ()</span><br><span class="line">&#123; </span><br><span class="line">console.log(i);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>加入有3个按钮，我想做到的是每次点击其中的一个按钮都会输出按钮在数组中的位置，比如点击第一个按钮显示0，第二个显示1，然而，当我们点击按钮的时候他输出的永远是3，我们看下这个代码的执行顺序，通过for循环给show的点击赋了一个函数，但是根据上面提到的原则，这个函数并没有执行，也就是说，只有你点击了按钮才会执行这个consolo.log(i)，而当你点击执行的时候for循环已经结束了，i的值已经成为了3,再使用闭包来实现。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var show=document.getElementsByClassName(“show”);</span><br><span class="line"></span><br><span class="line">for(var i=0;i&lt;show.length;i++)</span><br><span class="line">&#123;(function(i) &#123;</span><br><span class="line">    show[i].onclick = function ()</span><br><span class="line">    &#123;console.log(i);&#125;</span><br><span class="line">&#125;)(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个时候就完成了，当每次点击按钮，都会输出按钮在数组中的位置，来看这段代码的执行顺序，先是for循环，然后匿名函数就已经执行了，并且把 i 的值给保存了进去，实现了功能</p>
+<p>再来看一段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for (var i=1;i&lt;=5;i++) &#123;  </span><br><span class="line">setTimeout(function timer() &#123;</span><br><span class="line">console.log(i);</span><br><span class="line">&#125;,i*1000); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这段代码想实现每秒输出一个数值，第一秒输出一个1，第二秒输出一个2，以此类推，但是实际上执行的时候，却是每隔一秒输出6跟上面的思路一样，先看timer函数什么时候执行，第一次执行是1秒后，第二次执行时2秒后，但是setTimeout()函数里面传入的是一个异步回调函数，它共享了上一层的作用域，所以当延迟执行之后，for循环已经结束了，所以输出的每次都是6，同样可以利用闭包来保存当前的 i 的值。如下就实现了功能<br>代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for (var i=1;i&lt;=5;i++) &#123;(</span><br><span class="line">function(i)&#123;setTimeout(function timer()</span><br><span class="line">&#123;console.log(i);&#125;,i*1000);</span><br><span class="line">&#125;)(i)&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在ES6出来之后，我们可以用更简单的方法实现上面的功能即在for循环中使用let来声明变量，ES6中的let和const都是块级作用域</p>
 
     </div>
 
@@ -253,7 +261,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%9D%82%E8%B0%88/" rel="tag"># 杂谈</a>
+              <a href="/tags/JS/" rel="tag"># JS</a>
           </div>
 
         
@@ -261,10 +269,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/" rel="next" title="ThinkPhp5.1入门和爬坑">
-      ThinkPhp5.1入门和爬坑 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/" rel="prev" title="ThinkPhp5.1入门和爬坑">
+      <i class="fa fa-chevron-left"></i> ThinkPhp5.1入门和爬坑
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/11/CSS3%E4%B8%AD%E7%9A%84%E4%BC%AA%E7%B1%BB/" rel="next" title="CSS3中的伪类">
+      CSS3中的伪类 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -303,7 +314,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#博客的意义"><span class="nav-number">1.</span> <span class="nav-text">博客的意义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#坚持"><span class="nav-number">2.</span> <span class="nav-text">坚持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最近"><span class="nav-number">3.</span> <span class="nav-text">最近</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

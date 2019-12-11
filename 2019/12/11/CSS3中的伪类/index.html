@@ -47,18 +47,18 @@
   };
 </script>
 
-  <meta name="description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
-<meta name="keywords" content="杂谈">
+  <meta name="description" content="动态伪类选择器&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;动态伪类选择器包括 :link 是指链接未被访问时，通常用在a标签上去掉下划线和颜色。 :visited 指元素已经被访问过后的状态, :hover 指用户的鼠标停留在元素上, :active 指元素被激活, :focus 指元素获得焦点。">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纸上得终觉浅">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;26&#x2F;%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85&#x2F;index.html">
+<meta property="og:title" content="CSS3中的伪类">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;CSS3%E4%B8%AD%E7%9A%84%E4%BC%AA%E7%B1%BB&#x2F;index.html">
 <meta property="og:site_name" content="Pawns">
-<meta property="og:description" content="博客的意义&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。">
+<meta property="og:description" content="动态伪类选择器&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;动态伪类选择器包括 :link 是指链接未被访问时，通常用在a标签上去掉下划线和颜色。 :visited 指元素已经被访问过后的状态, :hover 指用户的鼠标停留在元素上, :active 指元素被激活, :focus 指元素获得焦点。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-11T14:07:56.806Z">
+<meta property="og:updated_time" content="2019-12-11T14:08:48.688Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+<link rel="canonical" href="http://yoursite.com/2019/12/11/CSS3%E4%B8%AD%E7%9A%84%E4%BC%AA%E7%B1%BB/">
 
 
 <script id="page-configurations">
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title>纸上得终觉浅 | Pawns</title>
+  <title>CSS3中的伪类 | Pawns</title>
   
 
 
@@ -182,7 +182,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/26/%E7%BA%B8%E4%B8%8A%E5%BE%97%E7%BB%88%E8%A7%89%E6%B5%85/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/11/CSS3%E4%B8%AD%E7%9A%84%E4%BC%AA%E7%B1%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -195,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          纸上得终觉浅
+          CSS3中的伪类
         </h1>
 
         <div class="post-meta">
@@ -204,24 +204,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-26 16:24:50" itemprop="dateCreated datePublished" datetime="2019-11-26T16:24:50+08:00">2019-11-26</time>
+              <time title="创建时间：2019-12-11 19:34:30 / 修改时间：22:08:48" itemprop="dateCreated datePublished" datetime="2019-12-11T19:34:30+08:00">2019-12-11</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-11 22:07:56" itemprop="dateModified" datetime="2019-12-11T22:07:56+08:00">2019-12-11</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
                   </a>
                 </span>
             </span>
@@ -237,13 +231,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="博客的意义"><a href="#博客的意义" class="headerlink" title="博客的意义"></a>博客的意义</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;很多时候我觉得自己的学习过程是不断的踩坑和爬坑，简单来说就是一看就会，动手就错，因为身边没有可以交流的人只能通过搜索引擎去找解决方法，所幸能从许多前辈的博客中找到解决的方法，所以我也想用博客记录下自己的爬坑过程，一方面可以方便自己的回顾，另一方面可能对别人也有所帮助。</p>
+        <h4 id="动态伪类选择器"><a href="#动态伪类选择器" class="headerlink" title="动态伪类选择器"></a>动态伪类选择器</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;动态伪类选择器包括 <strong>:link</strong> 是指链接未被访问时，通常用在a标签上去掉下划线和颜色。 <strong>:visited</strong> 指元素已经被访问过后的状态, <strong>:hover</strong> 指用户的鼠标停留在元素上, <strong>:active</strong> 指元素被激活, <strong>:focus</strong> 指元素获得焦点。</p>
 <a id="more"></a>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;其中如果是button标签中伪类的执行顺序是hover-active-focus。<br>如果是在a标签中伪类的执行顺序是hover-active。动态伪类还能替完成很多之前需要js才能完成的动效，比如鼠标停留在某个元素上，元素宽度高度增加等等</p>
 <hr>
-<h4 id="坚持"><a href="#坚持" class="headerlink" title="坚持"></a>坚持</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;之前也有搭建过一个wordpress的博客，断断续续更了一年，虽然没坚持下去，但是能很明显感觉到自己的水平在提高，写的过程就是一种思考，更重要的是更新博客的也是学习的动力之一。</p>
+<h4 id="目标伪类选择器"><a href="#目标伪类选择器" class="headerlink" title="目标伪类选择器"></a>目标伪类选择器</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>:target</strong>一般用在a标签的href里加#ID或#锚点，可以链接到指定的元素。使用target我们可以实现手风琴功能，相册，tab，幻灯片等效果。下面是一个简单的手风琴</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">p&#123;</span><br><span class="line">    width:500px;</span><br><span class="line">    hei:100px;</span><br><span class="line">    display:none;</span><br><span class="line">&#125;</span><br><span class="line">li:target&#123;</span><br><span class="line">    display:block;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li id=&quot;click1&quot;&gt;</span><br><span class="line">            &lt;a href=&quot;#click1&quot;&gt;Brand&lt;/a&gt;</span><br><span class="line">            &lt;p&gt;</span><br><span class="line">               Everything that we do is a step in one direction or another. </span><br><span class="line">            &lt;/p&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;click2&quot;&gt;</span><br><span class="line">            &lt;a href=&quot;#click2&quot; &gt;Two&lt;/a&gt;</span><br><span class="line">            &lt;p&gt;</span><br><span class="line">              Everything that we do is a step in one direction or another. </span><br><span class="line">            &lt;/p&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &lt;li id=&quot;click3&quot;&gt;</span><br><span class="line">            &lt;a href=&quot;#click3&quot;&gt;Tree&lt;/a&gt;</span><br><span class="line">            &lt;p &gt;</span><br><span class="line">                Everything that we do is a step in one direction or another. </span><br><span class="line">            &lt;/p&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h4 id="最近"><a href="#最近" class="headerlink" title="最近"></a>最近</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;前段时间参加了一个CTF比赛，这也可能是我又重新捡起来博客的一个原因之一，我一直对自己蛮有信心，没想到在安全方向输的这么惨。不过没关系，下次会赢回来的。</p>
+<h4 id="UI元素状态伪类选择器"><a href="#UI元素状态伪类选择器" class="headerlink" title="UI元素状态伪类选择器"></a>UI元素状态伪类选择器</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;通常用于form表单中的各种元素包括<br><strong>:checked</strong>指选中状态<br><strong>:enabled</strong>指启用状态<br><strong>:disabled</strong>指不可用状态伪类选择器</p>
 <hr>
+<h4 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;CSS3中的伪元素是使用两个冒号来和伪类选择器做区分。包括 <strong>::first-letter</strong> 指文本中的第一个字母，<strong>::first-line</strong> 指文本的第一行文本。 <strong>::before</strong> 和 <strong>::after</strong> 是我们常用的伪类，生成内容需要content属性，一般用于清除浮动。伪元素还可以用来画三角形，r然后使用position来定位举个例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.one::before&#123;</span><br><span class="line">    width: 0px;</span><br><span class="line">    display:block;</span><br><span class="line">    content:&apos;&apos;;</span><br><span class="line">    border-width:8px 8px 8px 8px;</span><br><span class="line">    border-style:solid;</span><br><span class="line">    border-color:#ff4d4d transparent transparent transparent;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">  &lt;div class=&quot;one&quot;&gt;内容&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
 
     </div>
 
@@ -253,7 +261,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%9D%82%E8%B0%88/" rel="tag"># 杂谈</a>
+              <a href="/tags/CSS/" rel="tag"># CSS</a>
           </div>
 
         
@@ -261,11 +269,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/12/01/Thinkphp%E5%85%A5%E9%97%A8%E7%88%AC%E5%9D%91/" rel="next" title="ThinkPhp5.1入门和爬坑">
-      ThinkPhp5.1入门和爬坑 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/12/03/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/" rel="prev" title="JS中的闭包">
+      <i class="fa fa-chevron-left"></i> JS中的闭包
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -303,7 +311,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#博客的意义"><span class="nav-number">1.</span> <span class="nav-text">博客的意义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#坚持"><span class="nav-number">2.</span> <span class="nav-text">坚持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最近"><span class="nav-number">3.</span> <span class="nav-text">最近</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#动态伪类选择器"><span class="nav-number">1.</span> <span class="nav-text">动态伪类选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#目标伪类选择器"><span class="nav-number">2.</span> <span class="nav-text">目标伪类选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UI元素状态伪类选择器"><span class="nav-number">3.</span> <span class="nav-text">UI元素状态伪类选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伪元素"><span class="nav-number">4.</span> <span class="nav-text">伪元素</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
