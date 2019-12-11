@@ -286,7 +286,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-11 22:21:38" itemprop="dateModified" datetime="2019-12-11T22:21:38+08:00">2019-12-11</time>
+                <time title="修改时间：2019-12-11 22:26:32" itemprop="dateModified" datetime="2019-12-11T22:26:32+08:00">2019-12-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -312,21 +312,14 @@
 
       
           <p>在《javascript高级程序设计》中是这样介绍闭包：通过闭包，内部的函数可以在父函数结束后依旧能够引用其外围函数中的变量。理解闭包首先要理解Javascript中一个名词：执行上下文，可以理解为当前代码运行的环境，主要有三个：<strong>全局环境</strong>，<strong>函数环境</strong>，<strong>eval环境</strong>，而Javascript引擎是采用栈的方法来处理它们，栈底是全局上下文，栈顶是当前正在执行的上下文。这里需要记住一个原则:“<strong>当函数执行时才会创建执行上下文</strong>”</p>
-<p>先看一段代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var show = document.getElementsByClassName(“show”);</span><br><span class="line"></span><br><span class="line">for(var i=0;i&lt;show.length;i++) &#123;</span><br><span class="line">    show[i].onclick = function ()</span><br><span class="line">&#123; </span><br><span class="line">console.log(i);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>加入有3个按钮，我想做到的是每次点击其中的一个按钮都会输出按钮在数组中的位置，比如点击第一个按钮显示0，第二个显示1，然而，当我们点击按钮的时候他输出的永远是3，我们看下这个代码的执行顺序，通过for循环给show的点击赋了一个函数，但是根据上面提到的原则，这个函数并没有执行，也就是说，只有你点击了按钮才会执行这个consolo.log(i)，而当你点击执行的时候for循环已经结束了，i的值已经成为了3,再使用闭包来实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var show=document.getElementsByClassName(“show”);</span><br><span class="line"></span><br><span class="line">for(var i=0;i&lt;show.length;i++)</span><br><span class="line">&#123;(function(i) &#123;</span><br><span class="line">    show[i].onclick = function ()</span><br><span class="line">    &#123;console.log(i);&#125;</span><br><span class="line">&#125;)(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个时候就完成了，当每次点击按钮，都会输出按钮在数组中的位置，来看这段代码的执行顺序，先是for循环，然后匿名函数就已经执行了，并且把 i 的值给保存了进去，实现了功能</p>
-<p>再来看一段代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for (var i=1;i&lt;=5;i++) &#123;  </span><br><span class="line">setTimeout(function timer() &#123;</span><br><span class="line">console.log(i);</span><br><span class="line">&#125;,i*1000); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这段代码想实现每秒输出一个数值，第一秒输出一个1，第二秒输出一个2，以此类推，但是实际上执行的时候，却是每隔一秒输出6跟上面的思路一样，先看timer函数什么时候执行，第一次执行是1秒后，第二次执行时2秒后，但是setTimeout()函数里面传入的是一个异步回调函数，它共享了上一层的作用域，所以当延迟执行之后，for循环已经结束了，所以输出的每次都是6，同样可以利用闭包来保存当前的 i 的值。如下就实现了功能<br>代码如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for (var i=1;i&lt;=5;i++) &#123;(</span><br><span class="line">function(i)&#123;setTimeout(function timer()</span><br><span class="line">&#123;console.log(i);&#125;,i*1000);</span><br><span class="line">&#125;)(i)&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在ES6出来之后，我们可以用更简单的方法实现上面的功能即在for循环中使用let来声明变量，ES6中的let和const都是块级作用域</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/12/03/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
