@@ -1,0 +1,329 @@
+﻿{
+    "liujundong": [{
+        "id": "0",
+        "details": [
+            ["你好！"]
+        ],
+        "responses": [
+            {
+                "content": "你好！",
+                "nextliu": ["1"]
+            }, {
+                "content": "你是？",
+                "nextliu": ["3"]
+            }]
+    },
+        {
+            "id": "1",
+            "details": [
+                ["你想知道点什么？"]
+            ],
+            "responses": [
+                {
+                    "content": "这是什么？",
+                    "nextliu": ["4"]
+                }, {
+                    "content": "随便问嘛？",
+                    "nextliu": ["2"]
+                }]
+        },
+        {
+            "id": "2",
+            "details": [
+                ["当然可以，反正你又不能打字"]
+            ],
+            "responses": [
+                {
+                    "content": "你是谁？",
+                    "nextliu": ["3"]
+                }, {
+                    "content": "这是什么？",
+                    "nextliu": ["4"]
+                }]
+        },
+        {
+            "id": "3",
+            "details": [
+                ["我以为你一眼就能看到我的名字的...."]
+            ],
+            "responses": [
+                {
+                    "content": "可我不认识你",
+                    "nextliu": ["5"]
+                }, {
+                    "content": "这是什么？",
+                    "nextliu": ["4"]
+                }]
+        },
+        {
+            "id": "4",
+            "details": [
+                ["如你所见这是一个对话小游戏"]
+            ],
+            "responses": [
+                {
+                    "content": "为什么会做这个呢？",
+                    "nextliu": ["5"]
+                }, {
+                    "content": "你的职业？",
+                    "nextliu": ["6"]
+                }]
+        },
+        {
+            "id": "5",
+            "details": [
+                ["很多时候，我们了解对方都是通过聊天，不就是类似这种形式嘛?"]
+            ],
+            "responses": [
+                {
+                    "content": "嗯嗯",
+                    "nextliu": ["6"]
+                }, {
+                    "content": "......",
+                    "nextliu": ["8"]
+                }]
+        },
+        {
+            "id": "6",
+            "details": [
+                ["我是一个学生，兼职程序猿"]
+            ],
+            "responses": [
+                {
+                    "content": "那你做过什么项目呢？",
+                    "nextliu": ["7"]
+                }, {
+                    "content": "学生？",
+                    "nextliu": ["8"]
+                }]
+        },
+        {
+            "id": "7",
+            "details": [
+                ["我的项目在我的简历里面有写"]
+            ],
+            "responses": [
+                {
+                    "content": "工作和学业不会冲突吗?",
+                    "nextliu": ["8"]
+                },{
+                    "content": "我好像没有你的简历....",
+                    "nextliu": ["8"]
+                }
+            
+            ]
+        },
+        {
+            "id": "8",
+            "details": [
+                ["嗯....我是计算机专业"]
+            ],
+            "responses": [
+                {
+                    "content": "那你从事这个行业很久了？",
+                    "nextliu": ["9"]
+               
+                },{
+                    "content": "你的技术栈有哪些呢？",
+                    "nextliu": ["10"]
+                }]
+        },{
+            "id": "9",
+            "details": [
+                ["大概3年工作经验了吧，呃.....加班加出来的"]
+            ],
+            "responses": [
+                {
+                    "content": "你的技术栈有哪些呢？",
+                    "nextliu": ["10"]
+                },
+                {
+                    "content": ".....",
+                    "nextliu": ["11"]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "details": [
+                ["php,python,java,js......我一般写web，属于面向搜索引擎编程 XD"]
+            ],
+            "responses": [
+                {
+                    "content": "......",
+                    "nextliu": ["11"]
+                }]
+        },
+        {
+            "id": "11",
+            "details": [
+                ["如果你有项目做，可以通过我的邮箱联系我liujundong123@foxmail.com"]
+            ],
+            "responses": [
+                {
+                    "content": "好的",
+                    "nextliu": ["12"]
+                },{
+                    "content": "你有什么业余爱好吗？",
+                    "nextliu": ["13"]
+                }
+            ]
+        },
+
+         {
+            "id": "12",
+            "details": [
+                ["我最近都蛮闲"]
+            ],
+            "responses": [
+                {
+                    "content": "没什么业余爱好？",
+                    "nextliu": ["13"]
+                }]
+        },
+        {
+            "id": "13",
+            "details": [
+                ["蛮多，围棋，二胡.....都是三分钟热度，最近还迷上了CTF"]
+            ],
+            "responses": [
+                {
+                    "content": "围棋？",
+                    "nextliu": ["14"]
+                },
+                {
+                    "content": "二胡？",
+                    "nextliu": ["16"]
+                },
+                {
+                    "content": "CTF？",
+                    "nextliu": ["18"]
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "details": [
+                ["嗯，大概接触了一年多了，在野狐上有业一，可能是因为我只玩9路围棋,没有布局，那种寸土必争，一步生一步死的感觉真的棒"]
+            ],
+            "responses": [
+                {
+                    "content": "听起来不错",
+                    "nextliu": ["15"]
+                },
+                {
+                    "content": "太烧脑了",
+                    "nextliu": ["19"]
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "details": [
+                ["我最近也准备写一个围棋的软件，如果你也有兴趣可以关注我的博客"]
+            ],
+            "responses": [
+                {
+                    "content": "嗯嗯",
+                    "nextliu": ["19"]
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "details": [
+                ["我小时候我妈妈让我学的二胡，说如果年龄大了，子女不赡养你，还有一技之长 XD"]
+            ],
+            "responses": [
+                {
+                    "content": "哈哈哈哈哈哈哈",
+                    "nextliu": ["17"]
+                },
+                {
+                    "content": "可怜天下父母心",
+                    "nextliu": ["17"]
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "details": [
+                ["当时特别不喜欢这个乐器，觉得很土，现在开始喜欢上了"]
+            ],
+            "responses": [
+                {
+                    "content": "嗯嗯",
+                    "nextliu": ["19"]
+                },
+                {
+                    "content": "我也觉得蛮土",
+                    "nextliu": ["19"]
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "details": [
+                ["我是最近几个月才开始接触CTF的，感觉它和编程一样能给我成就感"]
+            ],
+            "responses": [
+                {
+                    "content": "成就感？",
+                    "nextliu": ["19"]
+                }
+            ]
+        },{
+            "id": "19",
+            "details": [
+                ["嗯，我觉得这些爱好都能带给我一种成就感，战胜一个对手，答出一道题，练好一首曲子，它们的给我的反馈都很快"]
+            ],
+            "responses": [
+                {
+                    "content": "长期呢？",
+                    "nextliu": ["22"]
+                },
+                {
+                    "content": "希望你能继续坚持",
+                    "nextliu": ["20"]
+                }
+            ]
+        },{
+            "id": "20",
+            "details": [
+                ["谢谢，就先聊到这里吧，后面我也不知道该说什么了......"]
+            ],
+            "responses": [
+                {
+                    "content": "嗯",
+                    "nextliu": ["21"]
+                }
+            ]
+        },{
+            "id": "21",
+            "details": [
+                ["其实我们也可以通过微信聊的，大部分时间我都很闲"]
+            ],
+            "responses": [
+                {
+                    "content": "",
+                    "nextliu": ["x"]
+                }
+            ]
+        },{
+            "id": "22",
+            "details": [
+                ["长期？考研吧，这是我的下一个目标"]
+            ],
+            "responses": [
+                {
+                    "content": "加油！",
+                    "nextliu": ["20"]
+                }
+            ]
+        }
+
+
+
+
+    ]
+}
